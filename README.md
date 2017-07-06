@@ -73,6 +73,11 @@ The Model Predictive Control is also implemented to handle a 100 millisecond lat
 
 Without latency, the default MPC solution was able to control the car smoothly around the track. When I added the artificial latency, but do nothing to the MPC algorithm, the car swerves significantly, especially around bendy sections of the track. This shows the impact of actuator latency and is mitigated by using an estimated future state instead of the current observed state for processing. This is not possible with the simple [PID controller](https://github.com/lowspin/CarND2-Proj04-PID-Contoller). 
 
+## Demo
+
+Here's a video of a demo of the result for two rounds around the simulation track:
+https://youtu.be/UyHpel2UEFM
+
 ## Conclusion
 
 After observing the car in the simulator for a few lapse, I am sure the MPC can successfully control the car to navigate the planned route without problems, even with a 100ms actuation delay.
